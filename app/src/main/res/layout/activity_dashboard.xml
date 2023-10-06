@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D6DD91"
+    tools:context=".Dashboard">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/pink_card"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="#BD4242"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBaseline_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="16dp">
+
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create"
+
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="15dp"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/text_sos"
+        android:elevation="8dp"
+        app:layout_constraintStart_toStartOf="@id/pink_card"
+        app:layout_constraintTop_toTopOf="@id/pink_card"
+        android:layout_margin="16dp"
+        android:textStyle="bold"
+        android:textColor="#ffff"
+        android:textSize="24sp"
+        android:text="Create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        app:layout_constraintEnd_toEndOf="@id/pink_card"
+        app:layout_constraintStart_toStartOf="@id/pink_card"
+        android:elevation="8dp"
+        android:layout_margin="16dp"
+        android:textColor="#ffff"
+        app:layout_constraintTop_toBottomOf="@id/text_sos"
+        android:id="@+id/sos_msg"
+        android:text="Create a group for a subject"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/pink_card"
+        app:layout_constraintTop_toTopOf="@id/pink_card"
+        android:elevation="8dp"
+        app:layout_constraintEnd_toEndOf="@id/pink_card"
+        android:src="@drawable/add"
+        android:layout_width="96dp"
+        android:layout_height="96dp"/>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/green_card"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="76dp"
+        app:cardBackgroundColor="#3EA7AA"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pink_card"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="32dp" >
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Join"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="15dp"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/text_guard"
+        android:elevation="8dp"
+        app:layout_constraintStart_toStartOf="@id/green_card"
+        app:layout_constraintTop_toTopOf="@id/green_card"
+        android:layout_margin="16dp"
+        android:textStyle="bold"
+        android:textColor="#ffff"
+        android:textSize="24sp"
+        android:text="Join Live"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        app:layout_constraintEnd_toEndOf="@id/green_card"
+        app:layout_constraintStart_toStartOf="@id/green_card"
+        android:elevation="8dp"
+        android:layout_margin="16dp"
+        android:textColor="#ffff"
+        app:layout_constraintTop_toBottomOf="@id/text_guard"
+        android:id="@+id/guard_msg"
+        android:text="Join Study Room"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/green_card"
+        app:layout_constraintTop_toTopOf="@id/green_card"
+        android:elevation="8dp"
+        app:layout_constraintEnd_toEndOf="@id/green_card"
+        android:src="@drawable/live"
+        android:layout_width="96dp"
+        android:layout_height="96dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
